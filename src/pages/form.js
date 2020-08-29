@@ -20,6 +20,14 @@ export default function Form() {
 
   const sendData = async (e) => {
     e.preventDefault()
+
+    //start spining
+    const spining = document.querySelector(".my-spiner")
+    spining.classList.add('show')
+
+    //remove button
+    document.querySelector(".my-btn").classList.add("hide")
+
     try {
       const response = await fetch(
         "https://api.airtable.com/v0/appQNd1ZBLXYdZyId/data?api_key=keyvRuPIeqiVjsCzL",
@@ -33,7 +41,12 @@ export default function Form() {
       )
       const json = await response.json()
       console.log("Success:", JSON.stringify(json))
-      setMessage("Success")
+      setMessage("You are successfully submitted the form.")
+
+      //remove spining
+      spining.classList.remove('show')
+
+
     } catch (error) {
       console.error("Error:", error)
       setMessage("Error")
@@ -127,6 +140,7 @@ export default function Form() {
                       placeholder="Facebook Url"
                       className="form-control cs csh"
                     />
+                    <h6>Optional</h6>
                     <input
         
                       onChange={handleInput}
@@ -135,12 +149,13 @@ export default function Form() {
                       placeholder="NID Number"
                       className="form-control cs csh"
                     />
+                    <h6>Compulsory(We'll show every comments to the website)</h6>
                     <textarea
                
                       onChange={handleInput}
                       type="text"
                       name="message"
-                      placeholder="Any of your comments about our organizations"
+                      placeholder="Any of your comments about our organization"
                       required
                       className="form-control cs"
                     ></textarea>
@@ -166,15 +181,16 @@ export default function Form() {
                     <h6>Present Adresss</h6>
                     
                     <input
-     
                       onChange={handleInput}
                       type="text"
                       name="present"
                       placeholder="Present Address"
-        
                       className="form-control cs csh"
                     />
-        <input name="submit" type="submit" value="Send" />
+        <input className="my-btn" name="submit" type="submit" value="Send" />
+        <div className="spinner-border my-spiner" role="status">
+            <span className="sr-only">Loading...</span>
+          </div>
         {message}
       </form>
   </Col>

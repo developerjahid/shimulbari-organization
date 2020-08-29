@@ -22,3 +22,12 @@ input.form-control.cs.csh {
 .home img{
     width: 100%;
 }
+.my-spiner {
+    display: none;
+}
+.show {
+    display: block!important;
+}
+.hide {
+    display: none;
+}
