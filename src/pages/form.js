@@ -117,7 +117,6 @@ export default function Form() {
                       type="text"
                       name="blood"
                       placeholder="Blood Group"
-                  
                       className="form-control cs csh"
                     />
                     <input
@@ -126,7 +125,6 @@ export default function Form() {
                       type="text"
                       name="facebook"
                       placeholder="Facebook Url"
-                      required
                       className="form-control cs csh"
                     />
                     <input
@@ -135,7 +133,6 @@ export default function Form() {
                       type="text"
                       name="nid"
                       placeholder="NID Number"
-                      required
                       className="form-control cs csh"
                     />
                     <textarea
@@ -144,7 +141,7 @@ export default function Form() {
                       type="text"
                       name="message"
                       placeholder="Any of your comments about our organizations"
-          
+                      required
                       className="form-control cs"
                     ></textarea>
                     <h6>Adresss</h6>
@@ -154,7 +151,7 @@ export default function Form() {
                       type="text"
                       name="ward"
                       placeholder="Ward No."
-                      required
+            
                       className="form-control cs csh"
                     />
                     <input
@@ -163,7 +160,7 @@ export default function Form() {
                       type="text"
                       name="village"
                       placeholder="Village"
-                      required
+                   
                       className="form-control cs csh"
                     />
                     <h6>Present Adresss</h6>
@@ -174,7 +171,7 @@ export default function Form() {
                       type="text"
                       name="present"
                       placeholder="Present Address"
-                      required
+        
                       className="form-control cs csh"
                     />
         <input name="submit" type="submit" value="Send" />
