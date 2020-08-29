@@ -74,7 +74,7 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="name"
-                      placeholder="Full Name"
+                      placeholder="Full Name(required)"
                       required
                       className="form-control cs csh"
                     />
@@ -83,7 +83,7 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="phone"
-                      placeholder="Phone Number"
+                      placeholder="Phone Number(required)"
                       required
                       className="form-control cs csh"
                     />
@@ -92,7 +92,7 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="email"
-                      placeholder="Email Address"
+                      placeholder="Email Address(required)"
                       required
                       className="form-control cs csh"
                     />
@@ -101,7 +101,7 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="institute"
-                      placeholder="Institute Name"
+                      placeholder="Institute Full Name(required)"
                       required
                       className="form-control cs csh"
                     />
@@ -110,7 +110,7 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="father"
-                      placeholder="Father Name"
+                      placeholder="Father Name(required)"
                       required
                       className="form-control cs csh"
                     />
@@ -119,7 +119,7 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="mother"
-                      placeholder="Mother Name"
+                      placeholder="Mother Name(required)"
                       required
                       className="form-control cs csh"
                     />
@@ -133,11 +133,11 @@ export default function Form() {
                       className="form-control cs csh"
                     />
                     <input
-          
+          required
                       onChange={handleInput}
                       type="text"
                       name="facebook"
-                      placeholder="Facebook Url"
+                      placeholder="Facebook Url(required)"
                       className="form-control cs csh"
                     />
                     <h6>Optional</h6>
@@ -155,7 +155,7 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="message"
-                      placeholder="Any of your comments about our organization"
+                      placeholder="Any of your comments about our organization(required)"
                       required
                       className="form-control cs"
                     ></textarea>
@@ -165,8 +165,8 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="ward"
-                      placeholder="Ward No."
-            
+                      placeholder="Ward No.(required)"
+                      required
                       className="form-control cs csh"
                     />
                     <input
@@ -174,8 +174,8 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="village"
-                      placeholder="Village"
-                   
+                      placeholder="Village(required)"
+                      required
                       className="form-control cs csh"
                     />
                     <h6>Present Adresss</h6>
@@ -184,8 +184,9 @@ export default function Form() {
                       onChange={handleInput}
                       type="text"
                       name="present"
-                      placeholder="Present Address"
+                      placeholder="Present Address(required)"
                       className="form-control cs csh"
+                      required
                     />
         <input className="my-btn" name="submit" type="submit" value="Send" />
         <div className="spinner-border my-spiner" role="status">
