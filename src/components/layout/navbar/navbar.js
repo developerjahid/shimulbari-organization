@@ -1,5 +1,6 @@
 import React, { Fragment} from "react"
 import Logo from "../../../images/logo.png"
+
 import {Link} from "gatsby"
 
 const Navbar = () => {
