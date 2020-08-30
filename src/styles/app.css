@@ -2,6 +2,7 @@
 .logo {
     margin-top: 10px;
 }
+
 input.form-control.cs.csh {
     margin-bottom: 20px;
 }
@@ -9,25 +10,32 @@ input.form-control.cs.csh {
 .form-mine {
     margin: 60px 0px;
 }
+
 .home {
     margin: 40px 0;
 }
+
 .form-text {
     max-width: 300px;
     margin: 10px 0;
 }
+
 .about {
     margin-top: 40px;
 }
-.home img{
+
+.home img {
     width: 100%;
 }
+
 .my-spiner {
     display: none;
 }
+
 .show {
-    display: block!important;
+    display: block !important;
 }
+
 .hide {
     display: none;
 }

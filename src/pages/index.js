@@ -6,15 +6,12 @@ import Cover from "../images/cover.jpg"
 
 const IndexPage = () => (
   <Layout>
-     <div className="container">
-     <div className="text-center home">
-    <img className="rounded" src={Cover}  alt="Cover"/>
+    <div className="container">
+      <div className="text-center home">
+        <img className="rounded" src={Cover} alt="Cover" />
+      </div>
     </div>
-     </div>
-    
-   
   </Layout>
 )
-
 
 export default IndexPage
