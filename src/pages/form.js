@@ -95,7 +95,7 @@ export default function Form() {
                 onChange={handleInput}
                 type="text"
                 name="institute"
-                placeholder="Institute Full Name(required)"
+                placeholder="Where are you studying?(required)"
                 required
                 className="form-control cs csh"
               />
@@ -103,7 +103,7 @@ export default function Form() {
                 onChange={handleInput}
                 type="text"
                 name="father"
-                placeholder="Father Name(required)"
+                placeholder="Father's Name(required)"
                 required
                 className="form-control cs csh"
               />
@@ -111,7 +111,7 @@ export default function Form() {
                 onChange={handleInput}
                 type="text"
                 name="mother"
-                placeholder="Mother Name(required)"
+                placeholder="Mother's Name(required)"
                 required
                 className="form-control cs csh"
               />
